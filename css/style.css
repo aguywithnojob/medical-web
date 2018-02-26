@@ -52,7 +52,7 @@
 	}
 
 	#home-heading h3{
-		color:#000;
+		color:#fff;
 		font-size:55px;
 		font-weight:700;
 		margin:20px 0 20px 0;
@@ -87,12 +87,12 @@
 		text-transform:uppercase;
 	}
 	.btn-white{
-		border-color:#000;
-		color:#000;
+		border-color:#fff;
+		color:#fff;
 	}
 	.btn-white:hover,.btn-white:focus{
-		background-color:#000;
-		color:#fff;
+		background-color:#fff;
+		color:#41464b;
 	}
 	.btn-wite{
 		border-color: #fff;
