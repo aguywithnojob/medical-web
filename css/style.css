@@ -52,7 +52,7 @@
 	}
 
 	#home-heading h3{
-		color:#fff;
+		color:#000;
 		font-size:55px;
 		font-weight:700;
 		margin:20px 0 20px 0;
@@ -87,12 +87,20 @@
 		text-transform:uppercase;
 	}
 	.btn-white{
-		border-color:#fff;
-		color:#fff;
+		border-color:#000;
+		color:#000;
 	}
 	.btn-white:hover,.btn-white:focus{
-		background-color:#fff;
-		color:#41464b;
+		background-color:#000;
+		color:#fff;
+	}
+	.btn-wite{
+		border-color: #fff;
+		color: #fff;
+	}
+	.btn-wite:hover,.btn-wite:focus{
+		background-color: #fff;
+		color: #41464b;
 	}
 	.btn-blue{
 		border-color:#34c6d3;
@@ -242,7 +250,7 @@ About Css
 
 
 	/*
-Work Css
+Lab Css
 	*/
 
 	.row.no-gutters[class*=col-]{
@@ -318,7 +326,8 @@ Icons Css
 		color:#34c6d3;
 	}
 
-		/*
+	
+			/*
 contact Css
 	*/
 

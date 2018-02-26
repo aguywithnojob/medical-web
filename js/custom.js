@@ -4,9 +4,9 @@
 			  new WOW().init();
 		});
 
-		/*Work */
+		/*lab */
 		$(function() {
-		  $("#work").magnificPopup({
+		  $("#lab").magnificPopup({
 		  	 delegate: 'a', // child items selector, by clicking on it popup will open
 		  type: 'image',
 		   gallery:{

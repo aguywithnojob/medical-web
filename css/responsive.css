@@ -51,7 +51,8 @@
     }
     #about-content-box {
         width: 100%;
-        height: 350px;
+        height: 100%;
+        overflow: hidden;
     }
     /* Stats */
     .stats-item {
@@ -91,34 +92,25 @@
     #about-bg-diagonal {
         border-left: 0;
         border-top: 0;
-        width: 100%;
-        height: 350px;
+          width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
+    
     #about-content-box {
         width: 100%;
         height: 350px;
     }
     /* Work */
+    #lab{
+        margin-top: 500px;
+    }
     .img-wrapper img {
         min-width: 100%;
+
     }
     /* Testimonials */
-    .testimonial blockquote {
-        padding: 6px 50px;
-    }
-    .testimonial blockquote:before {
-        left: 10px;
-    }
-    .testimonial blockquote:after {
-        right: 10px;
-    }
-    .testimonial blockquote p {
-        font-size: 14px;
-    }
-    /* Stats */
-    .stats-item {
-        padding: 20px 0;
-    }
+   
     /* Footer */
     #footer-copyrights {
         text-align: center;
@@ -149,17 +141,5 @@
     #about-content-box {
         margin-top: 40px;
     }
-    /* Testimonials */
-    .testimonial img {
-        max-width: 80px;
-    }
-    .testimonial blockquote {
-        padding: 6px 30px;
-    }
-    .testimonial blockquote:before {
-        left: 7px;
-    }
-    .testimonial blockquote:after {
-        right: 7px;
-    }
+  
 }
