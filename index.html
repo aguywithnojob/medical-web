@@ -698,13 +698,12 @@
 									<div class="col-md-6">
 										<div id="contact-right">
 											<h3>Contact US</h3>
-											<form action="#">
-												<input type="text" name="full-name" placeholder="Full Name" class="form-control">
+											<form action="php/quickcontact.php" method="post">
+												<input type="text" name="name" placeholder="Full Name" class="form-control">
 												<input type="text" name="email" placeholder="Email Address" class="form-control">
 												<textarea rows="5" name="message" placeholder="Message...." class="form-control"></textarea>
-												<div id="send-btn">
-													<a  class="btn btn-lg btn-general btn-wite" href="#" role="button">SEND</a>
-												</div>
+												<input type="submit" name="Send" class="btn btn-lg btn-general btn-wite" id="send-btn"/>
+												
 											</form>
 										</div>
 									</div>
@@ -716,8 +715,8 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div id="footer-copyrights" style="text-align:center;">
-											<p>Copyright &copy; 2018 All Right Are Reserved By Us.</p>
-											<img src="img/logo.png" width="50px" height="30px">
+											<p>Copyright &copy; 2018 All Right Are Reserved By <br>Ashirwad Institute Of Medical Science Pvt. Ltd.</p>
+											
 										</div>
 									</div>
 									

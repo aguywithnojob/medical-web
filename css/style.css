@@ -96,7 +96,8 @@
 	}
 	.btn-wite{
 		border-color: #fff;
-		color: #fff;
+
+		color: #41464b;
 	}
 	.btn-wite:hover,.btn-wite:focus{
 		background-color: #fff;
