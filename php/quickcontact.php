@@ -18,8 +18,8 @@ $mail->CharSet="UTF-8";
 $mail->SMTPSecure = 'tls';
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
-$mail->Username = 'XYZ@gmail.com';  //your gmail user id
-$mail->Password = 'PASSWORD';				//your gmail account password
+$mail->Username = 'gaut9a8m@gmail.com';  //your gmail user id
+$mail->Password = 'gautaM@5';				//your gmail account password
 $mail->SMTPAuth = true;
 
 
@@ -40,7 +40,7 @@ $mail->SMTPAuth = true;
 			$mail->SetFrom( $email , $name );
 			$mail->AddReplyTo( $email , $name );
 			
-				$mail->AddAddress( 'HOSPITAL@gmail.com' ,'CHAIRMEN NAME' ); //hospital or to whom mssg to be sent gmail id and name of chairmen
+				$mail->AddAddress( 'guat9a8m@gmail.com' ,'gautam' ); //hospital or to whom mssg to be sent gmail id and name of chairmen
 			
 			$mail->Subject = $subject;
 

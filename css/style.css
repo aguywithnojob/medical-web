@@ -121,6 +121,22 @@
 		border-radius: 0;
 		display: none;
 	}
+	.float{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:20px;
+	left:40px;
+	background-color:transparent;
+	color:#34c6d3;
+	border-radius:50px;
+	text-align:center;
+
+}
+
+.my-float{
+	margin-top:22px;
+}
 
 	/*
 	ANIMATE
@@ -262,6 +278,7 @@ Lab Css
 	
 	.img-wrapper{
 	overflow: hidden; 	
+	margin-right:10px; 
 	}
 	.img-wrapper img{
 		transition: transform .5s ease;
@@ -271,13 +288,19 @@ Lab Css
 		transform: scale(1.2);
 		cursor:zoom-in;
 	}
-
+	.size{
+		width: 100px;
+		height: 300px;
+	}
 
 	/*
 Team Css
 	*/
 	.team-member{
 		margin:0 15px;
+	}
+	.team-member img{
+		height: 400px;
 	}
 	.team-member-info{
 		padding:10px 0 30px 0; 
@@ -375,7 +398,14 @@ contact Css
 
 	}
 
-
+	.dail{
+		text-decoration: none;
+		color: #fff;
+	}
+	.dail:hover{
+		color: #34c6d3;
+		text-decoration: none;
+	}
 
 
 			/*
@@ -421,7 +451,13 @@ FOOTER Css
 	#footer-menu a:hover{
 		color: #34c6d3;
 	}
+	.btn-class{
+		position: fixed;
+		border:0;
+		bottom: 20px;
+		left: 1000px;
 
+	}
 
 			/*
 Navbar Css

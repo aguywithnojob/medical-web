@@ -15,6 +15,16 @@
 
 		  });
 		});
+
+		$(function(){
+			$("#lab-item").owlCarousel({
+				items: 3,
+				autoplay: true,
+				smartSpeed: 700,
+				loop: true,
+				autoplayHoverPause:true,
+			});
+		});
 		/*team */
 		$(function(){
 			$("#team-members").owlCarousel({

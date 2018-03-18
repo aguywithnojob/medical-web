@@ -127,7 +127,7 @@
 
 /* Extra Small Devices (Portrait Phones & Smaller devices) */
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     /* Services */
     .service-item-icon i {
         width: 58px;
@@ -141,5 +141,13 @@
     #about-content-box {
         margin-top: 40px;
     }
-  
+    #lab{
+        margin-top: 600px;
+    }
+    #about .content-title h3{
+        text-align: center;
+    }
+  #about .content-title-underline{
+    margin: 0 0 30px 145px;
+  }
 }
