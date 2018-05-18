@@ -1,6 +1,6 @@
 <?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
+/*require_once('phpmailer/PHPMailerAutoload.php');
 
 
 
@@ -16,10 +16,10 @@ $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->CharSet="UTF-8";
 $mail->SMTPSecure = 'tls';
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'mail.ashirwadhospital.net';
 $mail->Port = 587;
-$mail->Username = 'gaut9a8m@gmail.com';  //your gmail user id
-$mail->Password = 'gautaM@5';				//your gmail account password
+$mail->Username = 'ashirwad@ashirwadhospital.net';  //your gmail user id
+$mail->Password = 'Jbtech#5';				//your gmail account password
 $mail->SMTPAuth = true;
 
 
@@ -40,7 +40,7 @@ $mail->SMTPAuth = true;
 			$mail->SetFrom( $email , $name );
 			$mail->AddReplyTo( $email , $name );
 			
-				$mail->AddAddress( 'guat9a8m@gmail.com' ,'gautam' ); //hospital or to whom mssg to be sent gmail id and name of chairmen
+				$mail->AddAddress( 'ashirwad@ashirwadhospital.net' ,'gautam' ); //hospital or to whom mssg to be sent gmail id and name of chairmen
 			
 			$mail->Subject = $subject;
 
@@ -52,14 +52,42 @@ $mail->SMTPAuth = true;
 			$sendEmail = $mail->Send();
 
 			if( $sendEmail == true ){
-				echo "window.alert('$message_success')";
-				echo "window.open('../index.html','_self')";
+				echo "<script>window.alert('We will be in touch with you soon...')</script>";
+				echo "<script>window.open('../index.html','_self')</script>";
 			}
 			else{
 				echo '{ "alert": "error", "message": "Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '" }';
 			}
 			
 		}
-	}
+	}*/
+	if($_SERVER["REQUEST_METHOD"]=="POST"){
+		if(empty($_POST["email"])){
+			echo"<script>window.alert('email required');</script>";
+			echo"<script>window.open('../index.html','_self');</script>";
+		}
+		else{
+
+		$name = $_POST["name"];				//client name who is giving filling form.
+		$email = $_POST["email"];	//his gmail id.
+		$message =$_POST["message"];	//message 
+	//	echo"<script>window.alert('$name,$email,$message');</script>";
+		$subject = 'Regarding Queries'; //subject of mail
 		
+
+    $from=$email;
+    $to='ashirwadmbd@gmail.com';
+   
+    $body=$message;
+    if(mail($to,$subject,$from,$body)){
+       echo "<script>window.alert('We will be in touch with you soon...')</script>";
+				echo "<script>window.open('../index.html','_self')</script>";
+    } else {
+        echo 'E-mail delivery failure!';
+    }
+
+
+
+}
+	}	
 ?>

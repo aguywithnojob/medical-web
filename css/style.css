@@ -51,9 +51,16 @@
 		text-align:center;
 	}
 
-	#home-heading h3{
+	#home-heading .name{
 		color:#fff;
-		font-size:55px;
+		font-size:50px;
+		font-weight:700;
+		margin:20px 0 20px 0;
+		text-transform:uppercase;
+	}
+	#home-heading .quote{
+		color:#fff;
+		font-size:25px;
 		font-weight:700;
 		margin:20px 0 20px 0;
 		text-transform:uppercase;
@@ -123,12 +130,13 @@
 	}
 	.float{
 	position:fixed;
-	width:80px;
-	height:80px;
+	display: none;
+	width:72px;
+	height:72px;
 	bottom:20px;
 	left:40px;
-	background-color:transparent;
-	color:#34c6d3;
+	background-color:#34c6d3;
+	color:#fff;
 	border-radius:50px;
 	text-align:center;
 
@@ -282,16 +290,15 @@ Lab Css
 	}
 	.img-wrapper img{
 		transition: transform .5s ease;
+		width: 100px;
+		height: 300px;
 	}
 
 	.img-wrapper img:hover {
 		transform: scale(1.2);
 		cursor:zoom-in;
 	}
-	.size{
-		width: 100px;
-		height: 300px;
-	}
+	
 
 	/*
 Team Css
@@ -458,6 +465,8 @@ FOOTER Css
 		left: 1000px;
 
 	}
+
+
 
 			/*
 Navbar Css

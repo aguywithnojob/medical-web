@@ -25,6 +25,10 @@
     .vesco-nav-wrapper {
         padding: 0;
     }
+    .team-member img{
+        width: 100px;
+        height: 300px;
+    }
 }
 
 
@@ -62,6 +66,10 @@
     #footer-copyrights {
         text-align: center;
     }
+    .team-member img{
+        width: 100px;
+        height: 300px;
+    }
 }
 
 
@@ -69,6 +77,10 @@
 
 @media (max-width: 767px) {
     /* Mobile menu */
+    .team-member img{
+        width: 100px;
+        height: 200px;
+    }
     .navbar {
         background: rgba(0, 0, 0, .7);
         padding: 0;
@@ -80,9 +92,10 @@
         padding: 0;
     }
     /* Home */
-    #home-heading h3 {
-        font-size: 55px;
-    }
+    #home-heading h3{
+    font-size: 20px;
+    font-weight: 700;
+}
     /* Buttons */
     .btn-general {
         padding: 6px 22px 6px 22px;
@@ -115,13 +128,45 @@
     #footer-copyrights {
         text-align: center;
     }
+      .team-member-designation{
+      font-size: 10px;
+
+    }
+    h4.team-member-name{
+        font-size: 17px;
+    }
+    .img-wrapper img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 
 /* Extra Small Devices (Portrait Phones & Smaller devices) */
 
-@media (max-width: 480px) {
+@media (max-width: 400px) and (max-width: 690px) {
     /* OK */
+   #lab{
+        margin-top: 585px;
+    }
+    .team-member img{
+        width: 100px;
+        height: 100px;
+    }
+      p.team-member-designation{
+        font-size: 10px;
+    }
+    h4.team-member-name{
+        font-size: 17px;
+    }
+    .img-wrapper img{
+        width: 100px;
+        height: 100px;
+    }
+#home-heading h3{
+    font-size: 20px;
+    font-weight: 700;
+}
 }
 
 
@@ -150,4 +195,34 @@
   #about .content-title-underline{
     margin: 0 0 30px 145px;
   }
+  .team-member img{
+        width: 100px;
+        height: 100px;
+    }
+    p.team-member-designation{
+    font-size: 10px;
+
+    }
+    h4.team-member-name{
+        font-size: 17px;
+    }
+    .img-wrapper img{
+        width: 100px;
+        height: 100px;
+    }
+    #home-heading .name{
+        color:#fff;
+        font-size:30px;
+        font-weight:700;
+        margin:20px 0 0 0;
+        text-transform:uppercase;
+    }
+    #home-heading .quote{
+        color:#fff;
+        font-size:12px;
+        font-weight:700;
+        margin:10px 0 20px 0;
+        text-transform:uppercase;
+    }
+    
 }

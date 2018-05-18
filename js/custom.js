@@ -5,7 +5,7 @@
 		});
 
 		/*lab */
-		$(function() {
+		/*$(function() {
 		  $("#lab").magnificPopup({
 		  	 delegate: 'a', // child items selector, by clicking on it popup will open
 		  type: 'image',
@@ -14,7 +14,7 @@
 	  }
 
 		  });
-		});
+		});*/
 
 		$(function(){
 			$("#lab-item").owlCarousel({
@@ -54,11 +54,13 @@
 						//hide navbar
 						$("nav").removeClass("top-nav"); 
 						$("#back-to-top").fadeOut();
+						$("#call").fadeOut(); 
 					}
 					else{
 						//show navbar
 						$("nav").addClass("top-nav");
 						$("#back-to-top").fadeIn(); 
+						$("#call").fadeIn(); 
 					}
 
 				});
